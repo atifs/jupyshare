@@ -9,11 +9,6 @@ import time
 import sys
 import shelve
 
-try:
-    raw_input           # Python 2
-except NameError:
-    raw_input == input  # Python 3
-
 def jupyshare_parser():
     parser = argparse.ArgumentParser(description='Share Your Jupyter Notebook in the Cloud')
     parser.add_argument('--browser', action='store', help='Either chrome, firefox, or safari', default='chrome')
